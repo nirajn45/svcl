@@ -59,8 +59,8 @@ const MissionVission = () => {
             <span className="border-l-2 border-[#ff9602] h-6 mr-3"></span>
             <h1 className="text-lg font-bold">OUR PHILOSPHY</h1>
           </div>
-          <h1 className="text-lg md:text-3xl font-semibold mb-8  ">Our principles and   <span className='text-[#016db6] text-4xl md:text-7xl md:py-3 block'> convictions</span></h1>
-          <p className='text-justify leading-[40px] font-semibold text-2xl'>To become a leading global educational institution, SVGOI is committed to revolutionizing education, nurturing luminaries and innovators, and advancing knowledge for society and industry. Our goal i`s to create extraordinary talent across various disciplines, shaping the leaders of tomorrow.</p>
+          <h1 className="text-lg md:text-3xl font-semibold mb-8  ">Our principles and   <span className='text-[#016db6] text-4xl md:text-6xl md:py-3 block'> convictions</span></h1>
+          <p className='text-justify leading-[40px] font-semibold text-xl'>To become a leading global educational institution, SVGOI is committed to revolutionizing education, nurturing luminaries and innovators, and advancing knowledge for society and industry. Our goal i`s to create extraordinary talent across various disciplines, shaping the leaders of tomorrow.</p>
         </div>
         <div className="w-1/2 h-96 hidden md:block"> <img src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumwEcbjwYh6vMjIobVskel2URXBKJwfdaEic9W" alt="" /></div>
       </div>
