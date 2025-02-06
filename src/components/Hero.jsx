@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='h-[90vh] text-white' style={{backgroundImage:`url(https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAum9f113voJQ5AcTPoua6UY3sS7XMiGqmnIVwtL)`, backgroundSize:"cover", backgroundRepeat:"no-repeat", backgroundPosition:"center center"}}>
+        <div className='h-[90vh] text-white font-[Raleway]' style={{backgroundImage:`url(https://cofd2uo2s6.ufs.sh/f/LSgXeBx6oTrNJqg1PXsNHCBiEwX2zYqul5kc8reRTQMbL9jU)`, backgroundSize:"cover", backgroundRepeat:"no-repeat", backgroundPosition:"center center"}}>
             <div className="bg-[#000000b1] overlay h-full w-full flex flex-col justify-center">
                 <div className="w-10/12 mx-auto py-6">
                    

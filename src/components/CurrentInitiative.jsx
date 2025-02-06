@@ -17,13 +17,13 @@ const initiatives = [
 
 const CurrentInitiative = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-white to-gray-100">
+    <section className="py-16 bg-gradient-to-r from-white to-gray-100 font-[Raleway]">
       <div className="w-10/12 mx-auto">
         <div className=" mb-12">
           <h2 className="text-3xl font-semibold mb-4 text-black border-l-4 border-[#fea700] pl-2">
             Current <span className='text-[#fea700]'> Initiatives</span> & Achievements
           </h2>
-          <p className="text-lg text-black ">
+          <p className="text-lg text-black font-medium tracking-wide">
             At SVGOI, we are dedicated to nurturing future leaders through a combination of academic rigor, 
             cultural diversity, and state-of-the-art facilities. Our recent NAAC accreditation is a testament 
             to our commitment to excellence in education.

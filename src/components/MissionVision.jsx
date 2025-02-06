@@ -9,22 +9,22 @@ const MissionVission = () => {
     {
       number: '1',
       title: 'Empowering Students',
-      description: 'Our mission is to inspire and empower students to reach for the stars, guiding them towards academic excellence and personal growth.'
+      description: 'To provide a holistic legal education that combines theoretical knowledge with practical skills to develop competent and socially aware legal professionals.'
     },
     {
       number: '2',
       title: 'Driving Positive Change',
-      description: 'We strive to be a catalyst for positive change in society, fostering innovation and leadership among our students.'
+      description: 'To promote research and innovation in law and interdisciplinary fields for addressing complex societal challenges.'
     },
     {
       number: '3',
       title: 'Fostering Community Engagement',
-      description: 'We are committed to fostering community engagement, encouraging our students to become active participants in creating a better world.'
+      description: '3.	To uphold values of justice, equality, and integrity in nurturing future legal professionals committed to public service and advocacy.'
     },
     {
       number: '4',
       title: 'Promoting Diversity and Inclusion',
-      description: 'Our mission includes promoting diversity and inclusion, ensuring that every student feels valued and respected.'
+      description: '4.	To create an inclusive learning environment that embraces diversity and fosters critical thinking and ethical decision-making.'
     }
   ];
 
@@ -53,19 +53,19 @@ const MissionVission = () => {
 
   return (
     <>
-      <div className="container md:w-4/5 px-5 mx-auto py-12 flex">
-        <div className="md:w-1/2 flex flex-col align-middle  justify-center">
+      <div className="container md:w-4/5 px-5 mx-auto py-12 flex font-[Raleway]">
+        <div className="md:w-1/2 flex flex-col align-middle justify-center">
           <div className="flex mb-2 md:mb-5 items-center">
             <span className="border-l-2 border-[#ff9602] h-6 mr-3"></span>
             <h1 className="text-lg font-bold">OUR PHILOSPHY</h1>
           </div>
           <h1 className="text-lg md:text-3xl font-semibold mb-8  ">Our principles and   <span className='text-[#016db6] text-4xl md:text-7xl md:py-3 block'> convictions</span></h1>
-          <p className='text-justify'>To become a leading global educational institution, SVGOI is committed to revolutionizing education, nurturing luminaries and innovators, and advancing knowledge for society and industry. Our goal i`s to create extraordinary talent across various disciplines, shaping the leaders of tomorrow.</p>`
+          <p className='text-justify leading-[40px] font-semibold text-2xl'>To become a leading global educational institution, SVGOI is committed to revolutionizing education, nurturing luminaries and innovators, and advancing knowledge for society and industry. Our goal i`s to create extraordinary talent across various disciplines, shaping the leaders of tomorrow.</p>`
         </div>
         <div className="w-1/2 h-96 hidden md:block"> <img src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumwEcbjwYh6vMjIobVskel2URXBKJwfdaEic9W" alt="" /></div>
       </div>
 
-      <div className="container md:w-4/5 px-5 md:px-0 mx-auto pb-24">
+      <div className="container md:w-4/5 px-5 md:px-0 mx-auto pb-24 font-[Raleway]">
 
         <div className="md:flex items-center md:pt-7  ">
           <div className="md:w-1/3 h-full flex justify-center pb-7 md:pb-0 "><h1 className='md:text-5xl text-2xl font-semibold'> MISSION</h1></div>
@@ -85,7 +85,7 @@ const MissionVission = () => {
                     </div>
                     <div className="flex-grow sm:pl-6 mt-2 sm:mt-0">
                       <h2 className="font-medium title-font text-gray-900 mb-1 text-md">{item.title}</h2>
-                      <p className="leading-relaxed text-sm">{item.description}</p>
+                      <p className="leading-relaxed text-sm font-medium">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ const MissionVission = () => {
           </div>
         </div>
       </div>
-      <div className="container md:w-4/5 px-5 md:px-0 mx-auto pb-24">
+      <div className="container md:w-4/5 px-5 md:px-0 mx-auto pb-24 font-[Raleway]">
         <div className="md:flex-row flex flex-col-reverse items-center justify-center ">
           <div className="md:w-2/3">
             <div className="container  mx-auto flex flex-wrap">
@@ -112,7 +112,7 @@ const MissionVission = () => {
                     </div>
                     <div className="flex-grow sm:pl-6 mt-2 sm:mt-0">
                       <h2 className="font-medium title-font text-gray-900 mb-1 text-md">{item.title}</h2>
-                      <p className="leading-relaxed text-sm">{item.description}</p>
+                      <p className="leading-relaxed text-sm font-medium">{item.description}</p>
                     </div>
                   </div>
                 </div>

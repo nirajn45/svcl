@@ -15,7 +15,7 @@ export default function Faculty() {
     ]
   
     return (
-      <section id="faculty" className="py-16 bg-gray-100">
+      <section id="faculty" className="py-16 bg-gray-100 font-semibold font-[Raleway]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Our Faculty</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

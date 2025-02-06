@@ -69,7 +69,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-10">
+    <header className="bg-white shadow-md fixed w-full z-10 font-[Raleway]">
       <div className="w-11/12 container mx-auto px-4 py-5 flex justify-between items-center">
         <Link href="/">
           <img
