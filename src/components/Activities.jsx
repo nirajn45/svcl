@@ -27,49 +27,29 @@ const Activities = () => {
       description:
         "We value community engagement and leadership. Our scholarships support students who actively contribute to their communities and demonstrate leadership skills.",
     },
-  ]
-  const activity = [
     {
-      imageSrc: "https://utfs.io/f/83a3fe15-9e9d-4d09-9658-4875a006f730-rhoi1k.jpg"
+      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif",
+      title: "Activity",
+      description:
+        "Students actively participate in a wide range of activities including legal workshops, debates, and community outreach programs to enhance their legal skills and social responsibility.",
     },
     {
-      imageSrc: "https://utfs.io/f/08abd4ea-8f3f-43b0-b1ff-43e242ee92cf-4c428l.jpg"
+      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif",
+      title: "Moot Court Activities",
+      description:
+        "Moot court activities provide students with an opportunity to simulate real-life courtroom proceedings, honing their legal research, argumentation, and public speaking skills through competitive mock trials and debates.",
     },
     {
-      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif"
-    },
-  ]
-  const mootCourt = [
-    {
-      imageSrc: "https://utfs.io/f/83a3fe15-9e9d-4d09-9658-4875a006f730-rhoi1k.jpg"
+      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif",
+      title: "Internships",
+      description:
+        "Internships offer students valuable hands-on experience in legal practice, allowing them to work with top law firms, courts, NGOs, and corporate legal departments, while gaining practical insights into various areas of law.",
     },
     {
-      imageSrc: "https://utfs.io/f/08abd4ea-8f3f-43b0-b1ff-43e242ee92cf-4c428l.jpg"
-    },
-    {
-      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif"
-    },
-  ]
-  const internships = [
-    {
-      imageSrc: "https://utfs.io/f/83a3fe15-9e9d-4d09-9658-4875a006f730-rhoi1k.jpg"
-    },
-    {
-      imageSrc: "https://utfs.io/f/08abd4ea-8f3f-43b0-b1ff-43e242ee92cf-4c428l.jpg"
-    },
-    {
-      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif"
-    },
-  ]
-  const expertLectures = [
-    {
-      imageSrc: "https://utfs.io/f/83a3fe15-9e9d-4d09-9658-4875a006f730-rhoi1k.jpg"
-    },
-    {
-      imageSrc: "https://utfs.io/f/08abd4ea-8f3f-43b0-b1ff-43e242ee92cf-4c428l.jpg"
-    },
-    {
-      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif"
+      imageSrc: "https://utfs.io/f/67d27ca2-fa8b-45cc-a64d-950125bf5d5e-ot0ax1.avif",
+      title: "Expert Lectures",
+      description:
+        "Expert lectures feature renowned legal professionals and scholars, providing students with the opportunity to gain valuable insights from industry leaders on current legal trends, case studies, and real-world legal challenges.",
     },
   ]
 
@@ -137,7 +117,7 @@ const Activities = () => {
                         <h1 className="text-white text-xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 border-l-4 border-[#b02027] px-4">
                           {reason.title}
                         </h1>
-                        <p className="opacity-0 text-white text-md group-hover:opacity-80 transform duration-500">
+                        <p className="opacity-0 text-white text-[21px] group-hover:opacity-80 transform duration-500">
                           {reason.description}
                         </p>
                       </div>
@@ -160,214 +140,7 @@ const Activities = () => {
             </button>
           </div>
         </div>
-        <div className="w-10/12 mx-auto">
-          <p className="text-xl pl-2 border-l-4 border-[#b02027] text-black">
-            Activities
-          </p>
-
-          <div className="relative py-12">
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
-              >
-                {activity.map((activity, index) => (
-                  <article
-                    key={index}
-                    className="mx-auto mt-8 mb-12 w-full shadow-lg h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group flex-shrink-0"
-                    style={{ flex: `0 0 ${100 / visibleItems}%` }}
-                  >
-                    <div className="h-[50vh] bg-cover bg-center mx-auto w-[95%] rounded-lg relative overflow-hidden">
-                      <Image
-                        src={activity.imageSrc || "/placeholder.svg"}
-                        alt={activity.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-75 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-6">
-                        <h1 className="text-white text-xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 border-l-4 border-[#b02027] px-4">
-                          {activity.title}
-                        </h1>
-                        <p className="opacity-0 text-white text-md group-hover:opacity-80 transform duration-500">
-                          {activity.description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-          </div>
-        </div>
-        <div className="w-10/12 mx-auto">
-          <p className="text-xl pl-2 border-l-4 border-[#b02027] text-black">
-            Moot Court Activities
-          </p>
-
-          <div className="relative py-12">
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
-              >
-                {mootCourt.map((mootCourt, index) => (
-                  <article
-                    key={index}
-                    className="mx-auto mt-8 mb-12 w-full shadow-lg h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group flex-shrink-0"
-                    style={{ flex: `0 0 ${100 / visibleItems}%` }}
-                  >
-                    <div className="h-[50vh] bg-cover bg-center mx-auto w-[95%] rounded-lg relative overflow-hidden">
-                      <Image
-                        src={mootCourt.imageSrc || "/placeholder.svg"}
-                        alt={mootCourt.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-75 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-6">
-                        <h1 className="text-white text-xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 border-l-4 border-[#b02027] px-4">
-                          {mootCourt.title}
-                        </h1>
-                        <p className="opacity-0 text-white text-md group-hover:opacity-80 transform duration-500">
-                          {mootCourt.description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-          </div>
-        </div>
-        <div className="w-10/12 mx-auto">
-          <p className="text-xl pl-2 border-l-4 border-[#b02027] text-black">
-            Internships
-          </p>
-
-          <div className="relative py-12">
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
-              >
-                {internships.map((internships, index) => (
-                  <article
-                    key={index}
-                    className="mx-auto mt-8 mb-12 w-full shadow-lg h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group flex-shrink-0"
-                    style={{ flex: `0 0 ${100 / visibleItems}%` }}
-                  >
-                    <div className="h-[50vh] bg-cover bg-center mx-auto w-[95%] rounded-lg relative overflow-hidden">
-                      <Image
-                        src={internships.imageSrc || "/placeholder.svg"}
-                        alt={internships.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-75 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-6">
-                        <h1 className="text-white text-xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 border-l-4 border-[#b02027] px-4">
-                          {internships.title}
-                        </h1>
-                        <p className="opacity-0 text-white text-md group-hover:opacity-80 transform duration-500">
-                          {internships.description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-          </div>
-        </div>
-        <div className="w-10/12 mx-auto">
-          <p className="text-xl pl-2 border-l-4 border-[#b02027] text-black">
-            Expert Lectures
-          </p>
-
-          <div className="relative py-12">
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
-              >
-                {expertLectures.map((expertLectures, index) => (
-                  <article
-                    key={index}
-                    className="mx-auto mt-8 mb-12 w-full shadow-lg h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group flex-shrink-0"
-                    style={{ flex: `0 0 ${100 / visibleItems}%` }}
-                  >
-                    <div className="h-[50vh] bg-cover bg-center mx-auto w-[95%] rounded-lg relative overflow-hidden">
-                      <Image
-                        src={expertLectures.imageSrc || "/placeholder.svg"}
-                        alt={expertLectures.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-75 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-6">
-                        <h1 className="text-white text-xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 border-l-4 border-[#b02027] px-4">
-                          {expertLectures.title}
-                        </h1>
-                        <p className="opacity-0 text-white text-md group-hover:opacity-80 transform duration-500">
-                          {expertLectures.description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#AF0305] h-10 w-10 rounded-full flex items-center justify-center"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-          </div>
-        </div>
+        
       </div>
     </div>
   )

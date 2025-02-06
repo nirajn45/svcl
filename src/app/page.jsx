@@ -8,6 +8,8 @@ import Faculty from "@/components/Faculty";
 import Activities from "@/components/Activities";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CareerOpportunities from "@/components/CareerOpportunities";
+import Footer from "@/components/Footer";
+
 const page= () => {
   return (
     <div>
@@ -42,6 +44,7 @@ const page= () => {
       <section id="contact"  >
         <h2 className="text-3xl font-bold"><CareerOpportunities/></h2>
       </section>
+      <Footer />
     </main>
     </div>
   );

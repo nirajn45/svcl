@@ -12,7 +12,7 @@ const Hero = () => {
                     Infinite Horizons, One Campus
 
                     </p>
-                    <p className='text-md w-1/2 border-l-4 border-[#fea700] pl-2'>
+                    <p className='text-xl w-1/2 border-l-4 font-medium leading-7 border-[#fea700] pl-2'>
                     Swami Vivekanand Group of Institutes was established in 2004 under the aegis of Sh.Raghunath Rai Memorial Education & Charitable Trust. The governing body is headed by Sh. Ashwani Garg and Sh.Ashok Garg.
                     </p>
                 </div>
