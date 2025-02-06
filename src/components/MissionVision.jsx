@@ -84,7 +84,7 @@ const MissionVission = () => {
                       </svg>
                     </div>
                     <div className="flex-grow sm:pl-6 mt-2 sm:mt-0">
-                      <h2 className="font-medium title-font text-gray-900 mb-1 text-md">{item.title}</h2>
+                      <h2 className="font-medium title-font text-gray-900 mb-1 text-2xl">{item.title}</h2>
                       <p className="leading-relaxed text-sm font-medium">{item.description}</p>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ const MissionVission = () => {
                       </svg>
                     </div>
                     <div className="flex-grow sm:pl-6 mt-2 sm:mt-0">
-                      <h2 className="font-medium title-font text-gray-900 mb-1 text-md">{item.title}</h2>
+                      <h2 className="font-medium title-font text-gray-900 mb-1 text-2xl">{item.title}</h2>
                       <p className="leading-relaxed text-sm font-medium">{item.description}</p>
                     </div>
                   </div>
