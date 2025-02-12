@@ -12,8 +12,8 @@ const Hero = () => {
                     Infinite Horizons, One Campus
 
                     </p>
-                    <p className='text-xl w-1/2 border-l-4 font-medium leading-7 border-[#fea700] pl-2'>
-                    Swami Vivekanand Group of Institutes was established in 2004 under the aegis of Sh.Raghunath Rai Memorial Education & Charitable Trust. The governing body is headed by Sh. Ashwani Garg and Sh.Ashok Garg.
+                    <p className='lg:text-lg text-sm font-sans font-normal text-justify lg:w-1/2 border-l-4 leading-6 border-[#fea700] pl-2'>
+                    Swami Vivekanand Group of Institutes was  Established in 2022 | Approved by BCI | Affiliated to Punjabi University under the aegis of Sh.Raghunath Rai Memorial Education & Charitable Trust. The governing body is headed by Sh. Ashwani Garg and Sh.Ashok Garg.
                     </p>
                 </div>
             </div>

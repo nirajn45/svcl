@@ -23,7 +23,7 @@ const CurrentInitiative = () => {
           <h2 className="text-3xl font-semibold mb-4 text-black border-l-4 border-[#fea700] pl-2">
             <span className='text-[#fea700]'>Courses</span> Offered
           </h2>
-          <p className="text-lg text-black font-medium tracking-wide">
+          <p className="text-lg text-black font-medium tracking-wide text-justify">
           SVCL offers a diverse range of courses, including undergraduate and postgraduate programs in law, with specializations in areas such as constitutional law, criminal law, corporate law, and international law, designed to provide students with comprehensive legal knowledge and practical skills.
           </p>
         </div>

@@ -60,7 +60,7 @@ const MissionVission = () => {
             <h1 className="text-lg font-bold">OUR PHILOSPHY</h1>
           </div>
           <h1 className="text-lg md:text-3xl font-semibold mb-8  ">Our principles and   <span className='text-[#016db6] text-4xl md:text-6xl md:py-3 block'> convictions</span></h1>
-          <p className='text-justify leading-[40px] font-semibold text-xl'>To become a leading global educational institution, SVGOI is committed to revolutionizing education, nurturing luminaries and innovators, and advancing knowledge for society and industry. Our goal i`s to create extraordinary talent across various disciplines, shaping the leaders of tomorrow.</p>
+          <p className='text-justify leading-[40px] font-semibold lg:text-xl sm:text-sm'>Swami Vivekanand College of Law is dedicated to becoming a leading global institution by revolutionizing legal education, fostering future luminaries and innovators, and advancing legal knowledge for society and industry. Our goal is to cultivate exceptional legal talent, shaping the leaders of tomorrow in the field of law and justice.</p>
         </div>
         <div className="w-1/2 h-96 hidden md:block"> <img src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumwEcbjwYh6vMjIobVskel2URXBKJwfdaEic9W" alt="" /></div>
       </div>

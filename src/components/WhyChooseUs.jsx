@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import { ChevronLeft, ChevronRight, Star, GraduationCap, DollarSign, Award } from "lucide-react"
 
 const WhyChooseUs = () => {
@@ -10,37 +10,33 @@ const WhyChooseUs = () => {
   const reasons = [
     {
       title: "Academic Excellence",
-      description:
-        "A meticulously crafted curriculum that meets national and global legal education standards.",
+      description: "A meticulously crafted curriculum that meets national and global legal education standards.",
       icon: Star,
     },
     {
       title: "State-of-the-Art Infrastructure",
-      description:
-        "Modern moot court halls, digital library, legal research centers, and smart classrooms.",
+      description: "Modern moot court halls, digital library, legal research centers, and smart classrooms.",
       icon: GraduationCap,
     },
     {
       title: "Career-Oriented Programs",
-      description: "Moot court competitions, debates, legal workshops, leadership training, and international exposure.",
+      description:
+        "Moot court competitions, debates, legal workshops, leadership training, and international exposure.",
       icon: DollarSign,
     },
     {
       title: "100% Placement Assistance",
-      description:
-        "Strong industry networks and collaborations with top law firms and corporate legal teams.",
+      description: "Strong industry networks and collaborations with top law firms and corporate legal teams.",
       icon: Award,
     },
     {
       title: "Legal Research & Innovation Hub",
-      description:
-        "Dedicated to fostering legal research, policy development, and case law studies.",
+      description: "Dedicated to fostering legal research, policy development, and case law studies.",
       icon: Award,
     },
     {
       title: "Social Responsibility",
-      description:
-        "Legal aid clinics, free counseling services, and legal awareness drives for the underprivileged.",
+      description: "Legal aid clinics, free counseling services, and legal awareness drives for the underprivileged.",
       icon: Award,
     },
   ]
@@ -61,20 +57,29 @@ const WhyChooseUs = () => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reasons.length)
-  }
+  }, [reasons.length])
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + reasons.length) % reasons.length)
+  }, [reasons.length])
+
+  const getVisibleReasons = () => {
+    const visibleReasons = []
+    for (let i = 0; i < visibleItems; i++) {
+      const index = (currentIndex + i) % reasons.length
+      visibleReasons.push(reasons[index])
+    }
+    return visibleReasons
   }
 
   return (
-    <div className="text-white font-[Raleway]">
+    <div className="text-white font-sans">
       <div className="w-full h-full bg-[#00112d] py-12">
-        <div className="w-10/12 mx-auto py-12 flex flex-col">
+        <div className="w-11/12 mx-auto py-12 flex flex-col">
           <p className="text-3xl font-medium pb-3">Why Choose Us</p>
-          <p className="text-xl pl-2 border-l-4 border-[#fea700]">
+          <p className="text-xl pl-2 font-normal border-l-4 border-[#fea700]">
             Best Campus Experience, Best Placements and Best Culture
           </p>
 
@@ -82,9 +87,9 @@ const WhyChooseUs = () => {
             <div className="overflow-hidden">
               <div
                 className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
+                style={{ transform: `translateX(0%)` }}
               >
-                {reasons.map((reason, index) => (
+                {getVisibleReasons().map((reason, index) => (
                   <div
                     key={index}
                     className={`w-full flex p-3 flex-shrink-0`}
@@ -95,8 +100,8 @@ const WhyChooseUs = () => {
                         {React.createElement(reason.icon, { size: 32 })}
                       </div>
                       <div className="ml-3">
-                        <h3 className="text-2xl font-medium pb-2">{reason.title}</h3>
-                        <p className="text-sm font-medium">{reason.description}</p>
+                        <h3 className="text-xl font-medium pb-2">{reason.title}</h3>
+                        <p className="text-sm font-normal text-justify">{reason.description}</p>
                       </div>
                     </div>
                   </div>
@@ -106,12 +111,14 @@ const WhyChooseUs = () => {
             <button
               onClick={prevSlide}
               className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#fea700] h-10 w-10 rounded-full flex items-center justify-center"
+              aria-label="Previous slide"
             >
               <ChevronLeft className="w-6 h-6 text-white" />
             </button>
             <button
               onClick={nextSlide}
               className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#fea700] h-10 w-10 rounded-full flex items-center justify-center"
+              aria-label="Next slide"
             >
               <ChevronRight className="w-6 h-6 text-white" />
             </button>

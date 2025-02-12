@@ -23,7 +23,7 @@ const AboutUs = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-lg"></div>
           
         </div>
-        <div className=" text-gray-900 sm:text-lg lg:w-1/2 font-medium">
+        <div className=" text-gray-900 text-sm lg:text-lg lg:w-1/2 font-medium">
         At Swami Vivekanand College of Law (SVCL), we believe that law is not just a profession but a powerful tool for societal transformation. Inspired by the vision of Swami Vivekananda, our institution is dedicated to nurturing dynamic legal professionals who uphold justice, integrity, and leadership. <br /><br />
 
         With a legacy of academic excellence and state-of-the-art facilities, SVCL provides a strong foundation for students to excel in the legal field. Our innovative approach to legal education ensures that students are well-equipped to face the challenges of a rapidly changing world. <br /><br />
