@@ -16,7 +16,7 @@ const Activities = () => {
         "Engage in a variety of activities, from legal workshops and debates to community outreach programs, fostering both professional skills and social responsibility.",
     },
     {
-      imageSrc: "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumhXBpMYj1xiCWTIEqDGVAyUHtNgve4dfROn83",
+      imageSrc: "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumDN8QGsc3imC02hJzTjuAPrdk64eXYnEVlBgZ",
       title: "Moot Court Activities",
       description:
         "Simulate real courtroom experiences through moot court competitions, enhancing legal research, argumentation, and advocacy skills.",
