@@ -89,7 +89,7 @@ export default function Header() {
       <div className="container mx-auto px-4 w-11/12 py-3 sm:py-4 md:py-1 flex justify-between items-center">
         <Link href="/">
           <img
-            src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumX8z1ri2YwQAC3BxfPnoR46m9tK5uUkNerSOE"
+            src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumPraQSDZ89C4GnNKHTXFvruVyAOm6ZwU2Sibo"
             alt="SVCL Logo"
             width={120}
             height={60}

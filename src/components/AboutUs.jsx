@@ -8,7 +8,7 @@ const AboutUs = () => {
         <span className="text-[#fea700] ">
           About  </span>
         <br/>
-        The SVGOI
+        The SVCL
       </p>
       
       <div className="w-11/12 mx-auto flex flex-col lg:flex-row items-start gap-10">
