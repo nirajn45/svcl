@@ -26,7 +26,7 @@ const page= () => {
         <h2 className="text-3xl font-bold"><AboutUs/></h2>
       </section>
 
-      <section id="activities"  >
+      <section id="vision"  >
         <h2 className="text-3xl font-bold"><MissionVision/></h2>
       </section>
       <section id="courses"  >

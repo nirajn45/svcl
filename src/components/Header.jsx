@@ -86,14 +86,14 @@ export default function Header() {
     <header
       className={`fixed w-full z-10 font-[Raleway] transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
     >
-      <div className="container mx-auto px-4 w-11/12 py-3 sm:py-4 md:py-5 flex justify-between items-center">
+      <div className="container mx-auto px-4 w-11/12 py-3 sm:py-4 md:py-1 flex justify-between items-center">
         <Link href="/">
           <img
-            src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumu75j21zGDN7MfW9sTV1IA0zrSZwixYbo25LP"
+            src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumX8z1ri2YwQAC3BxfPnoR46m9tK5uUkNerSOE"
             alt="SVCL Logo"
             width={120}
             height={60}
-            className="w-24 sm:w-32 md:w-36 h-auto"
+            className="w-28 sm:w-32 md:w-40 h-auto"
           />
         </Link>
         <button
@@ -109,7 +109,7 @@ export default function Header() {
           }`}
         >
           <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12 text-base sm:text-lg font-medium p-5 lg:p-0">
-            {["about", "courses", "faculty", "activities", "contact"].map((section) => (
+            {["about", "courses", "faculty", "vision", "activities", "contact"].map((section) => (
               <li key={section}>
                 <button
                   onClick={() => scrollToSection(section)}

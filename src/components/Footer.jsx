@@ -14,9 +14,15 @@ function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Column 1: Main CTA */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center">
                 {/* <Scale className="w-8 h-8 text-[#fea700]" /> */}
-                <h3 className="text-2xl font-bold">Swami Vivekanand College of Law</h3>
+                <img
+            src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumX8z1ri2YwQAC3BxfPnoR46m9tK5uUkNerSOE"
+            alt="SVCL Logo"
+            width={120}
+            height={60}
+            className="w-28 sm:w-32 md:w-44 h-auto"
+          />
               </div>
               <h4 className="text-xl font-semibold text-[#fea700]">Join Us & Be the Future of Law!</h4>
               <p className="text-gray-300">
@@ -26,7 +32,7 @@ function Footer() {
             </div>
 
             {/* Column 2: Contact Information */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
               <h4 className="text-lg font-semibold text-[#fea700]">Contact Information</h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -51,7 +57,7 @@ function Footer() {
             </div>
 
             {/* Column 3: Vision */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
               <h4 className="text-lg font-semibold text-[#fea700]">Our Vision</h4>
               <p className="text-gray-300">
                  Empowering Legal Minds, Creating Future Leaders!
