@@ -13,7 +13,7 @@ const Hero = () => {
 
                     </p>
                     <p className='lg:text-lg text-sm font-sans font-normal text-justify lg:w-1/2 border-l-4 leading-6 border-[#fea700] pl-2'>
-                    Swami Vivekanand College of Law was  Established in 2021 | Approved by BCI | Affiliated to Punjabi University under the aegis of Sh.Raghunath Rai Memorial Education & Charitable Trust. The governing body is headed by Sh. Ashwani Garg and Sh.Ashok Garg.
+                    Swami Vivekanand College of Law was  Established in 2021 | Approved by BCI | Affiliated to Punjabi University under the aegis of Sh.Raghunath Rai Memorial Education & Charitable Trust. The governing body is headed by Sh. Ashwani Garg and Sh. Ashok Garg.
                     </p>
                 </div>
             </div>

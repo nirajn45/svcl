@@ -8,48 +8,54 @@ const MissionVission = () => {
   const MissionData = [
     {
       number: '1',
-      title: 'Empowering Students',
+      title: 'Holistic Legal Education',
       description: 'To provide a holistic legal education that combines theoretical knowledge with practical skills to develop competent and socially aware legal professionals.'
     },
     {
       number: '2',
-      title: 'Driving Positive Change',
+      title: 'Research and Innovation',
       description: 'To promote research and innovation in law and interdisciplinary fields for addressing complex societal challenges.'
     },
     {
       number: '3',
-      title: 'Fostering Community Engagement',
-      description: '3.	To uphold values of justice, equality, and integrity in nurturing future legal professionals committed to public service and advocacy.'
+      title: 'Justice, Equality, and Integrity',
+      description: 'To uphold values of justice, equality, and integrity in nurturing future legal professionals committed to public service and advocacy.'
     },
     {
       number: '4',
-      title: 'Promoting Diversity and Inclusion',
-      description: '4.	To create an inclusive learning environment that embraces diversity and fosters critical thinking and ethical decision-making.'
+      title: 'Inclusive Learning Environment',
+      description: 'To create an inclusive learning environment that embraces diversity and fosters critical thinking and ethical decision-making.'
+    },
+    {
+      number: '5',
+      title: 'Global Collaboration',
+      description: 'To collaborate with global institutions, legal communities, and stakeholders to contribute to the development of law and policy on a global scale.'
     }
   ];
-
+  
   const VisionData = [
     {
       number: '1',
-      title: 'Pursuing Excellence',
-      description: 'Our vision is to create a world-class educational institution that nurtures talent and fosters a culture of excellence.'
+      title: 'Excellence in Legal Education',
+      description: 'To be a leading institution of legal education and research, fostering a culture of excellence, justice, and innovation.'
     },
     {
       number: '2',
-      title: 'Building Leaders',
-      description: 'We envision a future where our graduates are leaders and innovators, making a positive impact on the world.'
+      title: 'Ethical and Responsible Leadership',
+      description: 'Empowering students to be ethical and socially responsible leaders in the legal profession.'
     },
     {
       number: '3',
-      title: 'Global Impact',
-      description: 'Our vision includes making a global impact, collaborating with partners worldwide to address pressing challenges.'
+      title: 'Advancement of Society',
+      description: 'Contributing to the advancement of society through legal knowledge and practice.'
     },
     {
       number: '4',
-      title: 'Sustainable Future',
-      description: 'We are committed to creating a sustainable future, integrating environmental responsibility into everything we do.'
+      title: 'Global Rule of Law',
+      description: 'Promoting the rule of law globally through research, innovation, and collaboration.'
     }
   ];
+  
 
   return (
     <>
